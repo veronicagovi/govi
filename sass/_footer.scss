@@ -1,0 +1,79 @@
+footer {
+    background-color: white;
+    padding: 20px;
+  
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .footer-left {
+      .social-media {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+  
+        li {
+          margin-right: 10px;
+          a {
+            color: #333;
+            font-size: 20px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  
+    .footer-right {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+  
+      .newsletter,
+      .contact-form {
+        margin: 10px;
+        h4 {
+          margin-bottom: 10px;
+        }
+  
+        form {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+  
+          input,
+          textarea {
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          }
+  
+          button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: pink;
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  
+    // Media query para hacer el footer responsive
+    @media screen and (max-width: 768px) {
+      .footer-left {
+        justify-content: flex-start;
+      }
+  
+      .footer-right {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+
