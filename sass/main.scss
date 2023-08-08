@@ -106,10 +106,10 @@ nav {
   }
 
   
-  .card-group {
+  @mixin estilos-tarjetas {
     .card {
-      width: 300px; 
-      margin-right: 20px; 
+      width: 300px;
+      margin-right: 20px;
       opacity: 1;
       transition: opacity 1s ease 0s;
   
@@ -118,7 +118,7 @@ nav {
       }
   
       .card-img-top {
-        height: 200px; 
+        height: 200px;
         object-fit: cover;
       }
   
