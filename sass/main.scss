@@ -3,6 +3,9 @@
 @import "responsive";
 @import "variables";
 
+%animacion-rotacion {
+  animation: rotate 5s linear;
+}
 
 body {
 margin: 0;
@@ -426,6 +429,7 @@ header
 }
 
 .image-item6 {
+  @extend %animacion-rotacion;
   position: relative;
   cursor: pointer;
   width: 400px; 
